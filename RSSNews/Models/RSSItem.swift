@@ -10,6 +10,8 @@ import Foundation
 
 struct RSSItem {
     var title: String
-    var publicationDate: String
     var description: String
+    var pubDate: String
+    
+    var checkedItem = false
 }

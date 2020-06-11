@@ -10,4 +10,13 @@ import UIKit
 
 class DetailViewController: UITableViewController {
     
+    
+    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = ""
+    }
 }
