@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FeedParser: NSObject, XMLParserDelegate {
+class RSSParser: NSObject, XMLParserDelegate {
     private var rssItems: [RSSItem] = []
     private var currentElement = ""
     private var currentTitle: String = "" {

@@ -24,7 +24,7 @@ class NewsViewController: UITableViewController {
     }
     
     func fetchData(from urlString: String) {
-        let feedParser = FeedParser()
+        let feedParser = RSSParser()
         feedParser.parseFeed(url: urlString) { news in
             self.news = news
             
@@ -54,7 +54,6 @@ class NewsViewController: UITableViewController {
     // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let rssItem = news?[indexPath.row] else { return }
-        
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
