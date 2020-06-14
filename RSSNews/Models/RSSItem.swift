@@ -13,5 +13,5 @@ struct RSSItem {
     var description: String
     var pubDate: String
     
-    var checkedItem = false
+    var readed = false
 }
